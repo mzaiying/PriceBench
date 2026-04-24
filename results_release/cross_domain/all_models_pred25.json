@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "description": "PriceBench Cross-Domain Price Estimation — 7 Models × 4 Domains",
+    "domains": [
+      "Consumer Electronics",
+      "Used Cars",
+      "Luxury Goods",
+      "Home Appliances"
+    ],
+    "metric_primary": "PRED(0.25)",
+    "metrics_reported": [
+      "PRED25",
+      "PRED50",
+      "MdAPE_pct",
+      "MAE",
+      "n"
+    ],
+    "models": [
+      "DeepSeek-V3",
+      "Qwen2.5-72B",
+      "GPT-4o-mini",
+      "Mistral Large",
+      "Llama 3.1 70B",
+      "Gemini 2.5 Flash",
+      "Claude Sonnet 4"
+    ],
+    "note_gemini_used_cars": "Gemini 2.5 Flash Used Cars PRED(0.25)=0.006 is a format-failure lower bound: 89.1% of responses were non-numeric."
+  },
+  "results": {
+    "DeepSeek-V3": {
+      "Consumer Electronics": {
+        "PRED_25": 0.7231,
+        "PRED_50": 0.9487,
+        "MdAPE_pct": 14.3,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.8291,
+        "PRED_50": 0.9557,
+        "MdAPE_pct": 8.6,
+        "n": 158
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.4323,
+        "PRED_50": 0.7871,
+        "MdAPE_pct": 30.9,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.6207,
+        "PRED_50": 0.9172,
+        "MdAPE_pct": 16.7,
+        "n": 145
+      }
+    },
+    "Qwen2.5-72B": {
+      "Consumer Electronics": {
+        "PRED_25": 0.6359,
+        "PRED_50": 0.8872,
+        "MdAPE_pct": 16.7,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.7089,
+        "PRED_50": 0.8734,
+        "MdAPE_pct": 12.9,
+        "n": 158
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.3935,
+        "PRED_50": 0.7032,
+        "MdAPE_pct": 32.4,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.4138,
+        "PRED_50": 0.6759,
+        "MdAPE_pct": 30.3,
+        "n": 145
+      }
+    },
+    "Gemini 2.5 Flash": {
+      "Consumer Electronics": {
+        "PRED_25": 0.4154,
+        "PRED_50": 0.4821,
+        "MdAPE_pct": 56.6,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.0063,
+        "PRED_50": 0.0063,
+        "MdAPE_pct": 99.1,
+        "n": 158
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.1097,
+        "PRED_50": 0.2903,
+        "MdAPE_pct": 92.1,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.2621,
+        "PRED_50": 0.4069,
+        "MdAPE_pct": 86.2,
+        "n": 145
+      }
+    },
+    "GPT-4o-mini": {
+      "Consumer Electronics": {
+        "PRED_25": 0.6615,
+        "PRED_50": 0.8462,
+        "MdAPE_pct": 14.3,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.5633,
+        "PRED_50": 0.7089,
+        "MdAPE_pct": 20.1,
+        "n": 158
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.329,
+        "PRED_50": 0.6645,
+        "MdAPE_pct": 39.2,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.3931,
+        "PRED_50": 0.6207,
+        "MdAPE_pct": 33.3,
+        "n": 145
+      }
+    },
+    "Mistral Large": {
+      "Consumer Electronics": {
+        "PRED_25": 0.5795,
+        "PRED_50": 0.7897,
+        "MdAPE_pct": 20.0,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.7532,
+        "PRED_50": 0.8671,
+        "MdAPE_pct": 9.0,
+        "n": 158
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.3419,
+        "PRED_50": 0.6,
+        "MdAPE_pct": 39.7,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.2828,
+        "PRED_50": 0.4552,
+        "MdAPE_pct": 56.3,
+        "n": 145
+      }
+    },
+    "Llama 3.1 70B": {
+      "Consumer Electronics": {
+        "PRED_25": 0.62,
+        "PRED_50": 0.7867,
+        "MdAPE_pct": 16.5,
+        "n": 150
+      },
+      "Used Cars": {
+        "PRED_25": 0.4655,
+        "PRED_50": 0.6724,
+        "MdAPE_pct": 27.5,
+        "n": 116
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.3091,
+        "PRED_50": 0.5364,
+        "MdAPE_pct": 45.4,
+        "n": 110
+      },
+      "Home Appliances": {
+        "PRED_25": 0.3737,
+        "PRED_50": 0.5556,
+        "MdAPE_pct": 40.7,
+        "n": 99
+      }
+    },
+    "Claude Sonnet 4": {
+      "Consumer Electronics": {
+        "PRED_25": 0.3385,
+        "PRED_50": 0.4308,
+        "MdAPE_pct": 425.66,
+        "n": 195
+      },
+      "Used Cars": {
+        "PRED_25": 0.3782,
+        "PRED_50": 0.5192,
+        "MdAPE_pct": 47.44,
+        "n": 156
+      },
+      "Luxury Goods": {
+        "PRED_25": 0.1742,
+        "PRED_50": 0.2258,
+        "MdAPE_pct": 9724.56,
+        "n": 155
+      },
+      "Home Appliances": {
+        "PRED_25": 0.3379,
+        "PRED_50": 0.4966,
+        "MdAPE_pct": 50.08,
+        "n": 145
+      }
+    }
+  }
+}

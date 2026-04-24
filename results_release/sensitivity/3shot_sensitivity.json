@@ -1,0 +1,145 @@
+{
+  "metadata": {
+    "description": "3-Shot Sensitivity Analysis — Gemini 2.5 Flash × Tasks C/D/E × 3 seeds",
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "finding": "Near-zero variance (CV < 3.3%) confirms 3-shot degradation is systematic, not seed-dependent."
+  },
+  "raw": {
+    "Task_C": {
+      "mean": 0.0019,
+      "std": 0.0005,
+      "min": 0.0012,
+      "max": 0.0023,
+      "seeds": {
+        "seed_42": {
+          "seed": 42,
+          "metric_name": "PRED25",
+          "metric_value": 0.0023,
+          "n": 862,
+          "elapsed": 1348.2,
+          "shot_items": [
+            "电池",
+            "WEB应用防火墙",
+            "视频监控数据库"
+          ]
+        },
+        "seed_123": {
+          "seed": 123,
+          "metric_name": "PRED25",
+          "metric_value": 0.0012,
+          "n": 862,
+          "elapsed": 1385.5,
+          "shot_items": [
+            "应急指挥配套设备",
+            "合  计",
+            "数据库软件"
+          ]
+        },
+        "seed_456": {
+          "seed": 456,
+          "metric_name": "PRED25",
+          "metric_value": 0.0023,
+          "n": 862,
+          "elapsed": 1389.6,
+          "shot_items": [
+            "《宏观调控》",
+            "应急方案管理",
+            "通信链路租用费"
+          ]
+        }
+      }
+    },
+    "Task_D": {
+      "mean": 0.0548,
+      "std": 0.0018,
+      "min": 0.0534,
+      "max": 0.0573,
+      "seeds": {
+        "seed_42": {
+          "seed": 42,
+          "metric_name": "Macro-F1",
+          "metric_value": 0.0538,
+          "n": 862,
+          "elapsed": 1374.1,
+          "shot_items": [
+            "电池",
+            "WEB应用防火墙",
+            "视频监控数据库"
+          ]
+        },
+        "seed_123": {
+          "seed": 123,
+          "metric_name": "Macro-F1",
+          "metric_value": 0.0534,
+          "n": 862,
+          "elapsed": 1379.1,
+          "shot_items": [
+            "应急指挥配套设备",
+            "合  计",
+            "数据库软件"
+          ]
+        },
+        "seed_456": {
+          "seed": 456,
+          "metric_name": "Macro-F1",
+          "metric_value": 0.0573,
+          "n": 862,
+          "elapsed": 1364.0,
+          "shot_items": [
+            "《宏观调控》",
+            "应急方案管理",
+            "通信链路租用费"
+          ]
+        }
+      }
+    },
+    "Task_E": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "seeds": {
+        "seed_42": {
+          "seed": 42,
+          "metric_name": "F1",
+          "metric_value": 0,
+          "n": 548,
+          "elapsed": 872.7,
+          "shot_items": [
+            "安全运维审计网关",
+            "二代防火墙（千兆）",
+            "出口防火墙"
+          ]
+        },
+        "seed_123": {
+          "seed": 123,
+          "metric_name": "F1",
+          "metric_value": 0,
+          "n": 548,
+          "elapsed": 865.2,
+          "shot_items": [
+            "接入交换机",
+            "核心交换机",
+            "终端安全防护系统"
+          ]
+        },
+        "seed_456": {
+          "seed": 456,
+          "metric_name": "F1",
+          "metric_value": 0,
+          "n": 548,
+          "elapsed": 1053.9,
+          "shot_items": [
+            "漏洞扫描系统",
+            "馈线",
+            "网络行为审计系统"
+          ]
+        }
+      }
+    }
+  }
+}

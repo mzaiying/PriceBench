@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "description": "PriceBench Popularity Gradient — 7 Models × 4 Domains",
+    "explanation": "Positive delta = popular items easier to price (memorization advantage). Negative delta = luxury reversal (aspirational price inflation in training data).",
+    "popular_criteria": [
+      "Top-50 organic search rank on major Chinese e-commerce platforms",
+      "Baidu Index daily average >= 500",
+      "At least 1,000 product reviews on major platforms"
+    ]
+  },
+  "results": {
+    "DeepSeek-V3": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.7692,
+        "popular_n": 143,
+        "niche_PRED25": 0.5769,
+        "niche_n": 52,
+        "delta": 0.1923
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.9891,
+        "popular_n": 92,
+        "niche_PRED25": 0.6061,
+        "niche_n": 66,
+        "delta": 0.383
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.4321,
+        "popular_n": 81,
+        "niche_PRED25": 0.4324,
+        "niche_n": 74,
+        "delta": -0.0003
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.6515,
+        "popular_n": 66,
+        "niche_PRED25": 0.5823,
+        "niche_n": 79,
+        "delta": 0.0692
+      }
+    },
+    "Qwen2.5-72B": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.7692,
+        "popular_n": 143,
+        "niche_PRED25": 0.3077,
+        "niche_n": 52,
+        "delta": 0.4615
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.8696,
+        "popular_n": 92,
+        "niche_PRED25": 0.4697,
+        "niche_n": 66,
+        "delta": 0.3999
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.2716,
+        "popular_n": 81,
+        "niche_PRED25": 0.527,
+        "niche_n": 74,
+        "delta": -0.2554
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.4697,
+        "popular_n": 66,
+        "niche_PRED25": 0.3797,
+        "niche_n": 79,
+        "delta": 0.09
+      }
+    },
+    "Gemini 2.5 Flash": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.4336,
+        "popular_n": 143,
+        "niche_PRED25": 0.3077,
+        "niche_n": 52,
+        "delta": 0.1259
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.0,
+        "popular_n": 92,
+        "niche_PRED25": 0.0,
+        "niche_n": 66,
+        "delta": 0.0
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.1235,
+        "popular_n": 81,
+        "niche_PRED25": 0.0946,
+        "niche_n": 74,
+        "delta": 0.0289
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.2424,
+        "popular_n": 66,
+        "niche_PRED25": 0.3038,
+        "niche_n": 79,
+        "delta": -0.0614
+      }
+    },
+    "GPT-4o-mini": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.8392,
+        "popular_n": 143,
+        "niche_PRED25": 0.2308,
+        "niche_n": 52,
+        "delta": 0.6084
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.75,
+        "popular_n": 92,
+        "niche_PRED25": 0.2727,
+        "niche_n": 66,
+        "delta": 0.4773
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.2469,
+        "popular_n": 81,
+        "niche_PRED25": 0.4595,
+        "niche_n": 74,
+        "delta": -0.2126
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.4848,
+        "popular_n": 66,
+        "niche_PRED25": 0.2658,
+        "niche_n": 79,
+        "delta": 0.219
+      }
+    },
+    "Mistral Large": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.7203,
+        "popular_n": 143,
+        "niche_PRED25": 0.2692,
+        "niche_n": 52,
+        "delta": 0.4511
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.9239,
+        "popular_n": 92,
+        "niche_PRED25": 0.4848,
+        "niche_n": 66,
+        "delta": 0.4391
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.3704,
+        "popular_n": 81,
+        "niche_PRED25": 0.2703,
+        "niche_n": 74,
+        "delta": 0.1001
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.3333,
+        "popular_n": 66,
+        "niche_PRED25": 0.2278,
+        "niche_n": 79,
+        "delta": 0.1055
+      }
+    },
+    "Llama 3.1 70B": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.6942,
+        "popular_n": 121,
+        "niche_PRED25": 0.2258,
+        "niche_n": 31,
+        "delta": 0.4684
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.5658,
+        "popular_n": 76,
+        "niche_PRED25": 0.3256,
+        "niche_n": 43,
+        "delta": 0.2402
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.3509,
+        "popular_n": 57,
+        "niche_PRED25": 0.3585,
+        "niche_n": 53,
+        "delta": -0.0076
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.3571,
+        "popular_n": 42,
+        "niche_PRED25": 0.2727,
+        "niche_n": 55,
+        "delta": 0.0844
+      }
+    },
+    "Claude Sonnet 4": {
+      "Consumer Electronics": {
+        "popular_PRED25": 0.3986,
+        "popular_n": 143,
+        "niche_PRED25": 0.1731,
+        "niche_n": 52,
+        "delta": 0.2255
+      },
+      "Used Cars": {
+        "popular_PRED25": 0.4222,
+        "popular_n": 90,
+        "niche_PRED25": 0.3182,
+        "niche_n": 66,
+        "delta": 0.104
+      },
+      "Luxury Goods": {
+        "popular_PRED25": 0.1481,
+        "popular_n": 81,
+        "niche_PRED25": 0.2027,
+        "niche_n": 74,
+        "delta": -0.0546
+      },
+      "Home Appliances": {
+        "popular_PRED25": 0.3939,
+        "popular_n": 66,
+        "niche_PRED25": 0.2911,
+        "niche_n": 79,
+        "delta": 0.1028
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "description": "Chain-of-Thought Ablation — Task C, IT Procurement",
+    "prompt_variant": "Appended 'Let's think step by step.' to Task C prompt"
+  },
+  "results": {
+    "DeepSeek-V3": {
+      "direct_PRED25": 0.2332,
+      "cot_PRED25": 0.1183,
+      "delta": -0.1149
+    },
+    "Qwen2.5-72B": {
+      "direct_PRED25": 0.0916,
+      "cot_PRED25": 0.0766,
+      "delta": -0.015
+    },
+    "Claude Sonnet 4": {
+      "direct_PRED25": 0.0012,
+      "cot_PRED25": 0.0012,
+      "delta": 0.0
+    },
+    "Mistral Large": {
+      "direct_PRED25": 0.2309,
+      "cot_PRED25": 0.0789,
+      "delta": -0.152
+    },
+    "Llama 3.1 70B": {
+      "direct_PRED25": 0.0684,
+      "cot_PRED25": 0.0534,
+      "delta": -0.015
+    }
+  }
+}
